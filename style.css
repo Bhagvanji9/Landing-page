@@ -72,7 +72,7 @@ height:auto;
 }
 .right{
     width:50%;
-    background-image: url(/img/landing_Desktop.png);
+    background-image: url(./img/landing_Desktop.png);
     background-attachment:scroll;
     background-repeat: no-repeat;
     background-size: contain;
