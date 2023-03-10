@@ -100,13 +100,13 @@
 
         .check {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
+            /* justify-content: center; */
+            align-items:flex-start;
+            margin-top: 15px;
         }
 
         .agree {
-            margin-left: 10px;
+            margin-left: 7px;
             font-size: small;
             line-height: 1.6em;
         }
@@ -122,8 +122,6 @@
 
         input[type='checkbox'] {
             accent-color: black;
-            height: 40px;
-            width: 40px;
         }
 
         input[type="checkbox"]:focus {
@@ -229,7 +227,7 @@
                                 <input type="text" placeholder="Select your birthdate" name="birthdate" id="birthdate" onfocus="(this.type='date')" required >
                             </div>
                             <div class="check">
-                                <input style="height: 40px; width: 40px;background-color: #000;" type="checkbox"
+                                <input style="height: 15px; width: 15px;margin-top: 4px;" type="checkbox"
                                     name="check" id="check" class="checkbox">
                                 <div class="agree">I agree to the <a href="">Terms of Service</a> , <a href=""> Privacy
                                         Policy</a> and <a href="">Telehealth Consent</a> .</div>
