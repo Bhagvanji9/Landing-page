@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .header {
+            display: flex;
+            height: 60px;
+            width: 100%;
+            border-bottom: 1px solid rgb(236, 234, 234);
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Tilt Neon', cursive;
+            background-color: white;
+        }
+
+        .cname {
+            margin-top: 5px;
+        }
+
+        .login {
+            margin-top: 5px;
+            font-family: 'Tilt Neon', cursive;
+        }
+
+        .main {
+            /* margin-top: 60px; */
+            width: 100%;
+            height: 92.4vh;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+            background-image: url(https://assets.curology.com/media/4a948424a825babbc1949524bcec88af.svg);
+            background-size: cover;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            padding: 70px;
+        }
+
+        .first {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 15px 0px;
+            font-family: 'Tilt Neon', cursive;
+
+        }
+
+        .second {
+            color: rgb(127, 128, 129);
+        }
+
+        select {
+            height: 50px;
+            width: 350px;
+            box-shadow: 0px 0px 4px 1px rgb(168 159 159 / 80%);
+            background-color: #fff;
+            margin-bottom: 10px ;
+            border-color: aliceblue;
+            border-radius: 8px;
+        }
+
+        .dob {
+            font-size: 0.8em;
+            margin-top: 15px;
+        }
+
+        #birthdate {
+
+            height: 40px;
+            width: 339px;
+            box-shadow: 0px 0px 4px 1px rgb(168 159 159 / 80%);
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-color: aliceblue;
+            border-radius: 8px;
+            padding: 5px;
+            border-top: none;
+            border-left: none;
+        }
+
+        .check {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .agree {
+            margin-left: 10px;
+            font-size: small;
+            line-height: 1.6em;
+        }
+
+        .agree a {
+            color: black;
+        }
+
+        .agree a:hover {
+            color: #696565;
+        }
+
+
+        input[type='checkbox'] {
+            accent-color: black;
+            height: 40px;
+            width: 40px;
+        }
+
+        input[type="checkbox"]:focus {
+            outline: 1px solid currentColor;
+            outline-offset: 1px;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+            margin-top: 40px;
+        }
+    .submitbutton{
+        display: flex;
+        height: 100%;
+        width: 40px;
+        background-color: #eeeeee;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a">
+            <header>
+                <div class="header">
+                   <a href="index.html">
+                       <div class="cname">
+                           <svg width="112" height="25" viewBox="0 0 112 25" fill="#332E54"
+                           xmlns="http://www.w3.org/2000/svg" class="ekbobui0 css-b03w03-iconStyles">
+                           <path
+                           d="m39.001 8.352-.405-2.13h-2.907v13.203h3.598V13.39c0-2.839 1.596-3.738 3.43-3.738.334 0 .668.024 1.073.119V6.175a9.31 9.31 0 0 0-.834-.047c-1.12 0-3.216.473-3.955 2.224ZM64.898 0h-3.597v19.425h3.597V0ZM10.054 16.207c-3.073 0-6.194-2.224-6.194-6.27 0-4.33 3.287-6.364 6.146-6.364 2.216 0 3.717 1.04 4.765 2.673l2.692-2.366C15.843 1.538 13.27 0 10.006 0 4.86 0 0 3.857 0 9.937c0 6.057 4.693 9.89 10.054 9.89 3.264 0 5.86-1.633 7.481-3.833l-2.525-2.177c-.977 1.373-2.836 2.39-4.956 2.39ZM52.2 5.82c-3.979 0-7.1 2.934-7.1 7.004 0 4.045 3.121 7.003 7.1 7.003 3.979 0 7.1-2.958 7.1-7.003 0-4.07-3.121-7.004-7.1-7.004Zm0 10.765c-1.763 0-3.502-1.277-3.502-3.761 0-2.485 1.739-3.762 3.502-3.762 1.763 0 3.502 1.254 3.502 3.762s-1.739 3.761-3.502 3.761ZM74.166 5.82c-3.978 0-7.1 2.934-7.1 7.004 0 4.045 3.122 7.003 7.1 7.003 3.98 0 7.1-2.958 7.1-7.003 0-4.07-3.145-7.004-7.1-7.004Zm0 10.765c-1.763 0-3.502-1.277-3.502-3.761 0-2.485 1.74-3.762 3.502-3.762 1.763 0 3.503 1.254 3.503 3.762s-1.763 3.761-3.503 3.761ZM28.518 13.912c0 1.538-.929 2.602-2.501 2.602-1.668 0-2.43-1.183-2.43-2.65V6.222h-3.622v8.352c0 2.863 1.835 5.205 5.051 5.205 1.406 0 2.954-.544 3.669-1.774l.262 1.42h3.145V6.221h-3.598v7.69h.024ZM93.679 4.543l-1.787 1.774a6.393 6.393 0 0 0-2.454-.497c-3.312 0-5.837 2.224-5.837 5.466 0 1.703.953 3.288 2.097 4.093-.644.426-1.24.994-1.597 1.703l-.071.166 2.787 1.372.072-.165c.452-.947 1.477-1.562 2.573-1.562 1.62 0 2.859 1.183 2.859 2.887 0 1.537-1.31 2.768-2.86 2.768-.88 0-2.096-.426-2.596-1.633l-.072-.165-2.859 1.395.072.166c.953 1.964 3.026 3.17 5.408 3.17 3.455 0 6.076-2.342 6.076-5.583 0-1.94-1.001-3.454-2.335-4.52 1.239-.97 2.12-2.389 2.12-4.069 0-1.42-.429-2.318-1.167-3.288l1.524-1.515-1.953-1.963Zm-4.241 9.393c-1.453 0-2.597-1.112-2.597-2.603 0-1.561 1.144-2.603 2.597-2.603 1.5 0 2.597 1.089 2.597 2.603.024 1.514-1.072 2.603-2.597 2.603ZM108.164 6.222l-3.431 7.382-3.383-7.382h-4.026l5.48 11.191-.262.521-3.836 7.382h3.812L112 6.222h-3.836Z"
+                           fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </a> 
+                <a style="text-decoration: none; color: black;" href="https://app.curology.com/auth/login">
+                    <div class="login">
+                        <span>Log In</span>
+                    </div>
+                </a>
+                </div>
+            </header>
+        </div>
+        <div class="b">
+            <section>
+                <div class="main">
+                    <div class="left">
+
+                    </div>
+                    <div class="right">
+                        <div class="right1" style="max-width: 350px; display: flex; flex-direction: column;">
+                            <span class="first">Confident skin starts here</span>
+                            <span class="second">First, let’s see if you’re eligible for the 30-day trial.</span>
+                            <label style="margin-top: 30px;color: rgb(39, 39, 39);" for="state">state</label>
+                            <div class="state">
+                                <select name="state" id="state" class="form-control">
+                                    <option value="select" disabled="">Select your state</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                </select>
+                            </div>
+                            <label class="dob">
+                                Patient’s date of birth
+                            </label>
+                            <div class="date">
+                                <input type="date" name="birthdate" id="birthdate" required>
+                            </div>
+                            <div class="check">
+                                <input style="height: 40px; width: 40px;background-color: #000;" type="checkbox"
+                                    name="check" id="check" class="checkbox">
+                                <div class="agree">I agree to the <a href="">Terms of Service</a> , <a href=""> Privacy
+                                        Policy</a> and <a href="">Telehealth Consent</a> .</div>
+                            </div>
+                            <div class="submit">
+                                <a style="height: 100%;" href="https://app.curology.com/auth/welcome/register">
+                               <div class="submitbutton"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.01 7.41H13.6L7.27 1.09 8.15.2l7.86 7.86-8.19 7.87-.86-.9 6.62-6.37H.01V7.41Z" fill="#696565"></path></svg>
+                            </div>
+                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

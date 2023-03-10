@@ -1,0 +1,155 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+height:auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border: 1px solid black;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+     position:fixed;
+    background-color:white;
+}
+.b{
+    margin-top: 72px;
+}
+.company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    float: inline-start;
+    margin-left: 30px;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+}
+.cname{
+    margin: 10px;
+}
+.offer button{
+    width: 200px;
+    height: 45px;
+    margin: 5px 20px;
+    background-color: #6f5cff;
+    color: white;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+    font-size: smaller;
+}
+.main{
+    display: flex;
+    width: 100%;
+
+}
+.left{
+    width: 50%;
+    height: 500px;
+    background-color:#f7f6ea;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+    padding-top: 50px;
+
+}
+.right{
+    width:50%;
+    background-image: url(/img/landing_Desktop.png);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:#e3e6fc;
+}
+.left1{
+    font-size: 105px;
+    line-height: 97%;
+}
+
+
+
+.info1{
+    font-weight:bolder;
+    font-size: larger;
+    margin-top: 10px;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.offer1 button{
+    width: 250px;
+    height: 55px;
+    margin: 5px 20px;
+    background-color: #6f5cff;
+    color: white;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.offer1{
+    margin: 10px 0px;
+    color: white;
+}
+footer{
+    background-color: #332E54;
+    padding:120px 60px 20px;
+}
+.logo2 svg{
+    height: 50px;
+    width: 50px;
+}
+.legal{
+    display: flex;
+    margin-top: 80px;
+    color: white;
+    justify-content:space-between ;
+}
+.legal1{
+    display: flex;
+    justify-content: space-between;
+}
+.terms{
+    margin-right: 25px;
+}
+.Privacy{
+    margin-right: 25px;
+}
+.personalinfo{
+    margin-right: 25px;
+}
+.legal1 a{
+    color: white;
+    text-decoration:underline white;
+}
+.legal1 a:hover{
+    text-decoration: none;
+    color: rgb(212, 209, 209);
+
+}
+.data{
+    padding-top: 40px;
+    color: white;
+}
+.review{
+    margin-right: 30px;
+}
