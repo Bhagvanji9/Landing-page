@@ -83,7 +83,12 @@ height:auto;
     line-height: 97%;
 }
 
+.left0 h1{
+    top: 75px;
+    position: sticky;
+    background-color:#f7f6ea;
 
+}
 
 .info1{
     font-weight:bolder;
